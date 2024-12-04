@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T06 {
+public class T06{
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -25,14 +25,14 @@ public class T06 {
         nama[5] = " ";
     }
     
-    public static void func_input(int[] nama) {
+    public static void func_input(String[] nama) {
         int i;
 
         for (i = 0; i <= 5; i++) {
             nama[i] = " ";
             while (i < 6) {
-                nama[i] = input.nextInt();
-                if (nama[i] == "---") {
+                nama[i] = input.nextLine();
+                if (nama[i].equals("---")) {
                     i = 6;
                 } else {
                     i = i + 1;
@@ -53,3 +53,5 @@ public class T06 {
         }
     }
 }
+
+    
